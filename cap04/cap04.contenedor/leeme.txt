@@ -1,0 +1,2 @@
+Para lanzar el ejemplo con maven:
+mvn compile exec:java

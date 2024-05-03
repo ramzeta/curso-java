@@ -1,0 +1,7 @@
+
+Para que funcione el ejemplo:
+Instalar h2
+Conectarse a h2 y ejecutar el script de creación de las ta blas schema-all.sql
+Lanzar el batch:
+mvn clean compile spring-boot:run
+

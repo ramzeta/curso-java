@@ -1,0 +1,6 @@
+Este proyecto muestra los logs en color.
+Es posible hacer que funcione con log4j o logback según las líneas de los comentarios.
+
+Para lanzarlo:
+mvn spring-boot:run
+

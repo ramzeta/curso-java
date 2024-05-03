@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-lazy-init="true"
+  xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:aop="http://www.springframework.org/schema/aop"
+  xsi:schemaLocation="
+         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+         http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.1.xsd
+         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
+         http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+  <aop:aspectj-autoproxy />
+  <context:component-scan base-package="fr.eni" />
+
+  <!-- <bean id="org.h2.tools.Server" class="org.h2.tools.Server" factory-method="createTcpServer" 
+    init-method="start" destroy-method="stop"> <constructor-arg value="-tcp,-tcpAllowOthers,-tcpPort,8043" 
+    /> </bean> -->
+
+
+  <bean
+    class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <property name="location" value="jdbc.properties" />
+  </bean>
+
+  <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+    destroy-method="close">
+    <property name="driverClassName" value="${jdbc.driverClass}" />
+    <property name="url" value="${jdbc.url}" />
+    <property name="username" value="${jdbc.username}" />
+    <property name="password" value="${jdbc.password}" />
+  </bean>
+
+  <!-- <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"> 
+    <import resource="classpath:org/springframework/jdbc/support/sql-error-codes.xml" 
+    /> <bean id="H2" class="org.springframework.jdbc.support.SQLErrorCodes"> 
+    <property name="badSqlGrammarCodes"> <value> 42000,42001,42101,42102,42111,42112,42121,42122,42132 
+    </value> </property> <property name="duplicateKeyCodes"> <value>23001,23505</value> 
+    </property> <property name="dataIntegrityViolationCodes"> <value>22003,22012,22025,23000</value> 
+    </property> <property name="dataAccessResourceFailureCodes"> <value>90046,90100,90117,90121,90126</value> 
+    </property> <property name="cannotAcquireLockCodes"> <value>50200</value> 
+    </property> </bean> </beans> -->
+</beans>

@@ -1,0 +1,6 @@
+Este ejemplo presenta lo que hay que meter en el archivo maven pom.xml.
+También muestra cómo hacer logs simples.
+Es la primera etapa antes de empezar a codificar con Spring.
+
+Para lanzar los TU y el programa: 
+mvn clean compile test spring-boot:run

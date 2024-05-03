@@ -1,0 +1,4 @@
+Esta aplicación muestra el starter con argumentos.
+
+Para lanzarlo:
+mvn spring-boot:run

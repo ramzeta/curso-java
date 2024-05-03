@@ -1,0 +1,7 @@
+Este ejemplo muestra el uso de anotaciones lombok
+
+El código está en la clase Main.
+La clase Usuario tiene anotaciones que simplifican el código.
+
+Para ejecutar el ejemplo con maven:mvn compile exec:java
+

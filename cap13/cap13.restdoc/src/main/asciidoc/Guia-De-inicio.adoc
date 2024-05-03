@@ -1,0 +1,166 @@
+= RESTful Ciudades Getting Started Guide
+Andy Wilkinson;
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+
+[introduction]
+= Introducción
+
+El servicio web RESTful Ciudades es un servicio de creación y registro de ciudades. Usa hipermedia
+para describir los enlaces entre los recursos y permite la navegación entre estos recursos.
+
+[getting-started]
+= Inicio
+
+[getting-started-running-the-service]
+== Ejecutar ele servicio
+El servicio RESTful Ciudades se ha escrito con http://projects.spring.io/spring-boot[Spring Boot].
+
+La primera etapa consiste en clonar el repository git:
+
+[source,bash]
+----
+$ git clone ...
+----
+
+Cuando el clone está hecho, es suficiente con ejecutar estos comandos
+
+[source,bash]
+----
+$ cd RestDocEx1
+$ mvn clean package
+$ java -jar target/*.jar
+----
+
+Puede comprobar que el servicio está operativo haciendo una consulta en:
+cURL:
+
+include::{snippets}/index/1/curl-request.adoc[]
+
+La consulta debe proporcionar una respuesta que cumpla con el estándar:
+http://stateless.co/hal_specification.html[Hypertext Application Language (HAL)]
+
+include::{snippets}/index/1/http-response.adoc[]
+
+Las Ciudades en los enlaces `_links` de la respuesta JSON son claves para navegar por el API.
+
+[getting-started-creating-a-ciudad]
+== Crear una ciudad
+Maintena
+
+Ahora que inició el servicio y verificó que funciona, el siguiente paso es 
+crear una nueva ciudad. Como vio arriba, la URI para las ciudades está incluida
+como enlace cuando hace una consulta `GET` en la raíz del servicio:
+
+include::{snippets}/index/1/http-response.adoc[]
+
+Para crear una ciudad, debe ejecutar una consulta 'POST' en este URI que incluye un JSON
+que contenga el nombre y descripción de la ciudad:
+
+include::{snippets}/creating-a-ciudad/1/curl-request.adoc[]
+
+La respuesta de esta consulta debe tener un código de estado de `201 Created` y contener una
+cabecera `Location` cuyo valor es el URI de la ciudad recién creada:
+
+include::{snippets}/creating-a-ciudad/1/http-response.adoc[]
+
+Para trabajar con la ciudad recién creada use el URI en el encabezado `Location`. Por ejemplo,
+puede acceder a los datos de la ciudad haciendo una consulta `GET`:
+
+include::{snippets}/creating-a-ciudad/2/curl-request.adoc[]
+
+Esta consulta producirá una respuesta con los detalles de la ciudad en su descripción:
+
+include::{snippets}/creating-a-ciudad/2/http-response.adoc[]
+
+el enlace de `informations` de Ciudad que usaremos más adelante.
+
+[getting-started-creating-a-information]
+== Creating una información
+
+Para que una ciudad sea más fácil de encontrar, se puede asociar con cualquier nombre de información. 
+Para informar a una ciudad, primero debe crear información.
+
+Haciendo referencia a la respuesta para el índice del servicio, el URI para trabajar con la información es
+incluir como enlace:
+
+include::{snippets}/index/1/http-response.adoc[]
+
+Para crear una información, debe ejecutar una consulta `POST` en este URI, incluido un JSON
+que contiene el nombre de la información:
+
+include::{snippets}/creating-a-ciudad/3/curl-request.adoc[]
+
+La respuesta de esta consulta debe tener un código de estado de `201 Created` y contener una
+cabecera `Location` cuyo valor es el URI de la información recién creada:
+
+include::{snippets}/creating-a-ciudad/3/http-response.adoc[]
+
+Para usar la información recién creada, use el URI en el encabezado `Location`. Por ejemplo
+puede acceder a los detalles de la información realizando una consulta `GET`:
+
+include::{snippets}/creating-a-ciudad/4/curl-request.adoc[]
+
+Esta consulta producirá una respuesta con el detalle de la información en su body:
+
+include::{snippets}/creating-a-ciudad/4/http-response.adoc[]
+
+[getting-started-informationging-a-ciudad]
+== Informationging a ciudad
+Una información no es particularmente útil hasta que se asocia con una o más ciudades.
+Hay dos formas de ingresar la información de la ciudad:
+cuando se crea la ciudad o actualizando una ciudad existente.
+
+[getting-started-informationging-a-ciudad-creating]
+=== Crear una ciudad con una información
+El proceso es, en gran medida, el mismo que hemos visto antes, pero esta vez, además de proporcionar
+un nombre y un body para la ciudad, también le proporcionaremos la información que queremos asociar.
+
+Una vez más, ejecutamos una consulta `POST`. Sin embargo, esta vez, en una matriz denominada informations,
+incluya el URI de la información que acabamos de crear:
+
+
+include::{snippets}/creating-a-ciudad/5/curl-request.adoc[]
+
+De nuevo, el encabezado `Location` de la respuesta nos dice el URI de la ciudad recién creada:
+
+include::{snippets}/creating-a-ciudad/5/http-response.adoc[]
+
+Como antes, una consulta `GET` ejecutada en este URI recuperará los detalles de la ciudad:
+
+include::{snippets}/creating-a-ciudad/6/curl-request.adoc[]
+include::{snippets}/creating-a-ciudad/6/http-response.adoc[]
+
+Para comprobar que la información se ha asociado a la ciudad, podemos realizar una consulta `GET`
+en el URI del enlace `informations`:
+include::{snippets}/creating-a-ciudad/7/curl-request.adoc[]
+
+La respuesta incorpora información sobre la información que acabamos de asociar con la ciudad:
+
+include::{snippets}/creating-a-ciudad/7/http-response.adoc[]
+
+[getting-started-informationging-a-ciudad-existing]
+=== Añadir información sobre una ciudad existente
+Se puede definir una ciudad existente ejecutando una consulta `PATCH` contra el URI de la ciudad con
+un body que contiene la tabla de información a asociar con la ciudad. Usaremos el
+URI de la ciudad no informada que creamos anteriormente:
+include::{snippets}/creating-a-ciudad/8/curl-request.adoc[]
+
+Esta consulta debe producir una respuesta. `204 No Content`:
+
+include::{snippets}/creating-a-ciudad/8/http-response.adoc[]
+
+Cuando creamos por primera vez esta ciudad,
+hemos dado el enlace de la información incluida en sus detalles:
+
+include::{snippets}/creating-a-ciudad/2/http-response.adoc[]
+
+Podemos usar este enlace ahora y ejecutar una consulta `GET` para ver que la ciudad ahora tiene
+solo una información:
+
+include::{snippets}/creating-a-ciudad/9/curl-request.adoc[]
+include::{snippets}/creating-a-ciudad/9/http-response.adoc[]

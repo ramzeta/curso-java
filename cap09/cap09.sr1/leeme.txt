@@ -1,0 +1,8 @@
+Este ejemplo muestra un ejemplo de cliente REST simple con páginas jsp
+http://localhost:8080/hello?name=toto
+
+También muestra las posibilidades del actuador con todas las opciones:
+http://localhost:8080/actuator/
+https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html
+
+

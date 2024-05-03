@@ -1,0 +1,8 @@
+Ejemplo mínimo.
+Necesita tener un servidor redis funcionando.
+
+Iniciar la aplicacion.
+En el log, busque la línea que se parece a:
+Usando la contraseña de seguridad generada: c7f1bba4-9e3d-440b-85fa-2016e22b482e
+Inicie sesión con el usuario usuario y la contraseña mencionada en el log
+Se le redirigirá a la página predeterminada.

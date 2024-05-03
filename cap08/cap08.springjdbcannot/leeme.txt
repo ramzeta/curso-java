@@ -1,0 +1,8 @@
+Este ejemplo muestra los proxies.
+- fr.eni.ConfigHibrida : Ejemplo Spring JDBC con configuración híbrida
+- fr.eni.EstiloMapa : Ejemplo Spring JDBC con estilo mapa
+
+
+
+
+

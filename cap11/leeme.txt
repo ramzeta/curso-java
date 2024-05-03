@@ -1,0 +1,11 @@
+Ejemplo Angular
+Para ejecutar el servidor, vaya a cap11/fr-eni-spring5-backend y luego ejecute:
+mvn spring-boot:run
+
+Para ejecutar la parte del cliente, vaya a cap11/frontAngular/miApli
+ng serve
+
+Abra la siguiente URL en un navegador:
+http://localhost:4200/
+
+

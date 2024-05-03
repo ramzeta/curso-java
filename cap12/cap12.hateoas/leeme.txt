@@ -1,0 +1,10 @@
+Spring HATEOAS
+
+Lanzar el ejemplo :
+mvn spring-boot:run
+
+explorar en el navegador
+http://localhost:8080
+
+explorar directemente, por ejemplo para los departamentos:
+http://localhost:8080/departamentos

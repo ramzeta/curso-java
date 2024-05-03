@@ -1,0 +1,5 @@
+Este ejemplo muestra los bundles.
+La clase de operador es la siguiente:
+- LosBundles: Clase que muestra el uso de los bundles para localizar las frases.
+
+

@@ -1,0 +1,5 @@
+Este ejemplo demuestra el uso de conceptos avanzados.
+Hay 3 clases de pruebas:
+- Recurso1: cargando el archivo de recursos a través de getInputStream();
+- Recurso2: cargando el archivo de recursos a través del contexto
+- Recurso3: carga del archivo de recursos a través de un servicio ResourceLoaderAware

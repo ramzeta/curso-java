@@ -1,0 +1,3 @@
+Ejemplo de caché simple
+
+La ganancia de rendimiento se ve en el log

@@ -1,0 +1,8 @@
+Este ejemplo muestra un ejemplo de cliente REST simple
+Se utiliza con el servidor REST del Capítulo 9
+- ClientRest: Ejemplo sencillo de un cliente REST. Se utiliza con el servidor REST del Capítulo 9
+
+
+
+
+

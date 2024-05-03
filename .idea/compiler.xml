@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cap08.springdata" />
+        <module name="cap03.elementosexternos" />
+        <module name="cap09.sr2" />
+        <module name="cap17.momrmqex2" />
+        <module name="cap03.lombok" />
+        <module name="cap01.arquitectura" />
+        <module name="cap08.dbincorporada" />
+        <module name="cap05.binding" />
+        <module name="cap08.springjdbc" />
+        <module name="cap15.ex1mongodb" />
+        <module name="cap15.cache" />
+        <module name="cap17.momjmsex1" />
+        <module name="cap19.reactor" />
+        <module name="cap14.ex1logs" />
+        <module name="cap04.contenedor" />
+        <module name="cap06.aopparconfigjava" />
+        <module name="cap15.ex5redismessages" />
+        <module name="cap05.resbundle" />
+        <module name="cap03.h2" />
+        <module name="cap18.mvc" />
+        <module name="cap14.ex3security" />
+        <module name="cap06.aopparconfigxml" />
+        <module name="cap15.ex2mongodb" />
+        <module name="cap02.patrondediseno" />
+        <module name="cap03.h2web" />
+        <module name="cap10.step2" />
+        <module name="cap11-backend" />
+        <module name="cap16.springbatchex2" />
+        <module name="cap08.springjdbcannot" />
+        <module name="cap12.hateoas" />
+        <module name="cap13.restdoc" />
+        <module name="cap09.clirest" />
+        <module name="cap07" />
+        <module name="cap15.cacheredis" />
+        <module name="cap03.mavenWebApp" />
+        <module name="cap09.sr1" />
+        <module name="cap05.avance" />
+        <module name="cap06.proxies" />
+        <module name="cap14.spingbootsupport" />
+        <module name="cap08.springsimplejdbc" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cap01.arquitectura" options="-parameters" />
+      <module name="cap02.patrondediseno" options="-parameters" />
+      <module name="cap03.elementosexternos" options="-parameters" />
+      <module name="cap03.h2" options="-parameters" />
+      <module name="cap03.h2web" options="-parameters" />
+      <module name="cap07" options="-parameters" />
+      <module name="cap09.sr1" options="-parameters" />
+      <module name="cap11-backend" options="-parameters" />
+      <module name="cap12.hateoas" options="-parameters" />
+      <module name="cap13.restdoc" options="-parameters" />
+      <module name="cap14.ex1logs" options="-parameters" />
+      <module name="cap14.ex3security" options="-parameters" />
+      <module name="cap14.spingbootsupport" options="-parameters" />
+      <module name="cap15.cache" options="-parameters" />
+      <module name="cap16.springbatchex2" options="-parameters" />
+      <module name="cap18.mvc" options="-parameters" />
+      <module name="cap19.reactor" options="-parameters" />
+    </option>
+  </component>
+</project>

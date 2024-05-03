@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/cap01/cap01.arquitectura/pom.xml" />
+        <option value="$PROJECT_DIR$/cap02/cap02.patrondediseno/pom.xml" />
+        <option value="$PROJECT_DIR$/cap03/cap03.h2/pom.xml" />
+        <option value="$PROJECT_DIR$/cap03/cap03.h2web/pom.xml" />
+        <option value="$PROJECT_DIR$/cap03/cap03.lombok/pom.xml" />
+        <option value="$PROJECT_DIR$/cap03/cap03.mavenWebApp/pom.xml" />
+        <option value="$PROJECT_DIR$/cap03/cap03.elementosexternos/pom.xml" />
+        <option value="$PROJECT_DIR$/cap04/cap04.contenedor/pom.xml" />
+        <option value="$PROJECT_DIR$/cap05/cap05.avance/pom.xml" />
+        <option value="$PROJECT_DIR$/cap05/cap05.binding/pom.xml" />
+        <option value="$PROJECT_DIR$/cap05/cap05.resbundle/pom.xml" />
+        <option value="$PROJECT_DIR$/cap06/cap06.proxies/pom.xml" />
+        <option value="$PROJECT_DIR$/cap06/cap06.aopparconfigxml/pom.xml" />
+        <option value="$PROJECT_DIR$/cap06/cap06.aopparconfigjava/pom.xml" />
+        <option value="$PROJECT_DIR$/cap07/pom.xml" />
+        <option value="$PROJECT_DIR$/cap08/cap08.springdata/pom.xml" />
+        <option value="$PROJECT_DIR$/cap08/cap08.springjdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/cap08/cap08.incorporado/pom.xml" />
+        <option value="$PROJECT_DIR$/cap08/cap08.springjdbcannot/pom.xml" />
+        <option value="$PROJECT_DIR$/cap08/cap08.springsimplejdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/cap09/cap09.sr1/pom.xml" />
+        <option value="$PROJECT_DIR$/cap09/cap09.sr2/pom.xml" />
+        <option value="$PROJECT_DIR$/cap09/cap09.clirest/pom.xml" />
+        <option value="$PROJECT_DIR$/cap10/cap10.step2/pom.xml" />
+        <option value="$PROJECT_DIR$/cap11/cap11-backend/pom.xml" />
+        <option value="$PROJECT_DIR$/cap12/cap12.hateoas/pom.xml" />
+        <option value="$PROJECT_DIR$/cap13/cap13.restdoc/pom.xml" />
+        <option value="$PROJECT_DIR$/cap14/cap14.ex1logs/pom.xml" />
+        <option value="$PROJECT_DIR$/cap14/cap14.ex3security/pom.xml" />
+        <option value="$PROJECT_DIR$/cap14/cap14.spingbootsupport/pom.xml" />
+        <option value="$PROJECT_DIR$/cap15/cap15.cache/pom.xml" />
+        <option value="$PROJECT_DIR$/cap15/cap15.cacheredis/pom.xml" />
+        <option value="$PROJECT_DIR$/cap15/cap15.ex1mongodb/pom.xml" />
+        <option value="$PROJECT_DIR$/cap15/cap15.ex2mongodb/pom.xml" />
+        <option value="$PROJECT_DIR$/cap15/cap15.ex5redismessages/pom.xml" />
+        <option value="$PROJECT_DIR$/cap16/cap16.springbatchex2/pom.xml" />
+        <option value="$PROJECT_DIR$/cap17/cap17.momjmsex1/pom.xml" />
+        <option value="$PROJECT_DIR$/cap17/cap17.momrmqex2/pom.xml" />
+        <option value="$PROJECT_DIR$/cap18/cap18.mvc/pom.xml" />
+        <option value="$PROJECT_DIR$/cap19/cap19.reactor/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="graalvm-jdk-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

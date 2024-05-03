@@ -1,0 +1,6 @@
+Ejemplo ActiveMQ
+
+Este ejemplo envía y recepciona 3 mensajes con ActiveMQ.
+Para lanzarlo:
+
+mvn spring-boot:run

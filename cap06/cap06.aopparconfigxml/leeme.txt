@@ -1,0 +1,10 @@
+Este ejemplo demuestra la programación basada en aspectos usando la configuración por xml
+- Main: Ejemplo usando el AOP configurado por los archivos xml
+- Main3: Ejemplo sin intercepción
+- MainAvecAspect: Ejemplo con un aspecto
+
+
+
+
+
+

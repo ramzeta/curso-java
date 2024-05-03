@@ -1,0 +1,6 @@
+insert into usuario (id, nom, prenom) values (1, 'A', 'a');
+insert into usuario (id, nom, prenom) values (2, 'B', 'b');
+insert into usuario (id, nom, prenom) values (3, 'C', 'c');
+insert into usuario (id, nom, prenom) values (4, 'D', 'd');
+insert into usuario (id, nom, prenom) values (5, 'E', 'e');
+insert into usuario (id, nom, prenom) values (6, 'F', 'f');

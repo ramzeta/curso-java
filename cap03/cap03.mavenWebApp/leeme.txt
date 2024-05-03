@@ -1,0 +1,9 @@
+Este ejemplo muestra un proyecto web generado por maven.
+
+El código está en la página jsp index.jsp.
+
+Para probar ejecutar el ejemplo:
+Para ejecutar con tomcat: mvn tomcat7:run
+Para ejecutar con jetty: mvn jetty:run
+
+y mostrar la página http://localhost:8080/cap03.mavenWebApp/ en un navegador.

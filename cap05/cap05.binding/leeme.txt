@@ -1,0 +1,14 @@
+Este ejemplo muestra los bindings.
+Las clases que llevan los ejemplos son las siguientes:
+
+- Conversiones6: conversión usando factories UsuarioToStringConverterFactory y StringToUsuariorConverterFactory
+- ConvIntegradoHaciaArray: Ejemplo de conversión usando el convertidor integrado a un Array
+- LosBeanWrappers: Ejemplo de wrapper sobre Beans: También probamos errores de validación.
+- Conversiones: Conversiones de tipos comunes
+- LasConversiones2: ejemplos de conversiones a través de GenericConversionService para matrices de cadenas
+- LasConversiones3: ejemplos de conversión usando GenericConversionService para listas y objetos
+- LasConversiones4: ejemplos de conversiones USERToStringConverter y StringToUserConverter
+- LasConversiones5: Ejemplos de conversiones con USERToStringConverterFactory y StringToUserConverterFactory
+- LasConversiones6: Ejemplos de formateadores de fecha y número
+- LasConversiones7: Ejemplos de conversiones de números de tarjetas de crédito
+

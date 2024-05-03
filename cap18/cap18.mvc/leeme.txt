@@ -1,0 +1,4 @@
+Este ejemplo muestra un servidor Spring MVC en Kotlin
+
+Lanzar el servidor y explorar aquí:
+http://localhost:8080/cuentas

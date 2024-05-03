@@ -1,0 +1,11 @@
+Este ejemplo muestra la programación basada en aspectos utilizando la configuración de Java
+- Main: Primer ejemplo para AOP
+- Main: Segundo ejemplo para el AOP
+
+
+
+
+
+
+
+

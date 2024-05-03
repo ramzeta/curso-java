@@ -1,0 +1,3 @@
+Ejemplo de caché utilizando Redis
+
+La ganancia de rendimiento se ve en el log

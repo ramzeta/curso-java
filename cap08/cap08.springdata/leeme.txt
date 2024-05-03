@@ -1,0 +1,8 @@
+Este ejemplo muestra un ejemplo sencillo de Spring Data
+- SpringDataEx1 : Ejemplo simple Spring Data
+
+mvn compile exec:java -Dexec.mainClass="fr.eni.SpringDataEx1" -Dexec.cleanupDaemonThreads=false
+
+
+
+

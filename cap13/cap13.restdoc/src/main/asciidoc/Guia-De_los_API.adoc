@@ -1,0 +1,204 @@
+= RESTful Ciudades API Guide
+Andy Wilkinson;
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+:operation-curl-request-title: Example request
+:operation-http-response-title: Example response
+
+[[overview]]
+= Overview
+
+[[overview-http-verbs]]
+== Verbos HTTP
+
+El servicio RESTful ciudades intenta adherirse en la medida de lo posible a las convenciones estándar de HTTP y REST en su
+uso de verbos HTTP.
+
+|===
+| Verbo | Uso
+
+| `GET`
+| Se utiliza para recuperar un recurso
+
+| `POST`
+| Se utiliza para crear un nuevo recurso
+
+| `PATCH`
+| Se utiliza para actualizar un recurso existente, incluidas las actualizaciones parciales
+
+| `DELETE`
+| Se utiliza para eliminar un recurso existente
+|===
+
+[[overview-http-status-codes]]
+== HTTP status codes
+
+El servicio RESTful ciudades intenta adherirse en la medida de lo posible a las convenciones estándar de HTTP y REST en su
+uso de códigos de estado HTTP.
+
+|===
+| Status code | Uso
+
+| `200 OK`
+| La consulta finalizó con éxito
+
+| `201 Created`
+| Se ha creado con éxito un nuevo recurso. El recurso URI está disponible en el encabezado de la respuesta `Location`
+
+| `204 No Content`
+| Se aplicó con éxito una actualización a un recurso existente
+
+| `400 Bad Request`
+| La solicitud está mal formada. El cuerpo de la respuesta incluirá un error al proporcionar información adicional.
+
+| `404 Not Found`
+| El recurso solicitado no existía
+|===
+
+[[overview-errors]]
+== Errors
+
+Cada vez que se devuelve una respuesta de error (código de estado >= 400), el cuerpo contendrá un objeto JSON
+esto describe el problema. El objeto de error tiene la siguiente estructura:
+
+include::{snippets}/error-example/response-fields.adoc[]
+
+Por ejemplo, una consulta que intente aplicar información inexistente a una ciudad producirá
+Respuesta "400 Bad Request":
+
+include::{snippets}/error-example/http-response.adoc[]
+
+[[overview-hypermedia]]
+== Hypermedia
+
+El servicio RESTful Ciudades utiliza hipermedia y los recursos incluyen enlaces hacia otros
+recursos en sus respuestas.
+Las respuestas están en http://stateless.co/hal_specification.html[Aplicación de hipertexto
+de recurso en recurso.
+Idioma (HAL)]. Los enlaces se pueden encontrar bajo la tecla `_links`. Los usuarios de la API deben
+no crean URI por sí mismos, sino que deben usar los enlaces descritos anteriormente para navegar
+
+
+[[resources]]
+= Recursos
+
+[[resources-index]]
+== Índice
+
+El índice proporciona el punto de entrada al servicio.
+
+[[resources-index-access]]
+=== Acceder al índice
+
+Una consulta `GET` se utiliza para acceder al índice
+
+operation::index-example[snippets='response-fields,http-response,links']
+
+[[resources-ciudades]]
+== Ciudades
+
+Ciudades recursos se utilizan para crear y listar ciudades
+
+[[resources-ciudades-list]]
+=== Listar las ciudades
+
+Una consulta `GET` listará todas las ciudades del servicio.
+
+operation::ciudades-list-example[snippets='response-fields,curl-request,http-response,links']
+
+[[resources-ciudades-create]]
+=== Crear una ciudad
+
+Una consulta POST se utiliza para crear una ciudad.
+
+operation::ciudades-create-example[snippets='request-fields,curl-request,http-response']
+
+[[resources-informations]]
+== Informations
+
+El recurso Informations se utiliza para crear y organizar la información.
+
+
+[[resources-informations-list]]
+=== Listar la información
+
+Una consulta `GET` listará toda la información del servicio.
+
+operation::informations-list-example[snippets='response-fields,curl-request,http-response,links']
+
+
+[[resources-informations-create]]
+=== Crear una información
+
+Una consulta `POST` se utiliza para crear una información
+
+operation::informations-create-example[snippets='request-fields,curl-request,http-response']
+
+[[resources-ciudad]]
+== Ciudad
+
+El recurso Ciudad se utiliza para recuperar, actualizar y eliminar las ciudades individuales
+
+
+[[resources-ciudad-links]]
+=== Enlaces
+
+include::{snippets}/ciudad-get-example/links.adoc[]
+
+
+[[resources-ciudad-retrieve]]
+=== Buscar una ciudad
+
+Una consulta `GET` recuperará los detalles de una ciudad
+
+operation::ciudad-get-example[snippets='response-fields,curl-request,http-response']
+
+
+[[resources-ciudad-update]]
+=== Actualizar una ciudad
+
+Una consulta PATCH se utiliza para actualizar una ciudad
+
+==== Request structure
+
+include::{snippets}/ciudad-update-example/request-fields.adoc[]
+
+Para dejar un atributo de una ciudad sin cambios, todo lo anterior puede omitirse de la consulta.
+
+==== Ejemplo de consulta
+
+include::{snippets}/ciudad-update-example/curl-request.adoc[]
+
+==== Ejemplo de respuesta
+
+include::{snippets}/ciudad-update-example/http-response.adoc[]
+
+[[resources-information]]
+== Information
+
+El recurso de información se utiliza para recuperar, actualizar y eliminar la información individual
+
+[[resources-information-links]]
+=== Enlaces
+
+include::{snippets}/information-get-example/links.adoc[]
+
+
+[[resources-information-retrieve]]
+=== Buscar una información
+
+Una consulta `GET` recuperará los detales de una información
+
+operation::information-get-example[snippets='response-fields,curl-request,http-response']
+
+
+[[resources-information-update]]
+=== Actualizar una información
+
+Una consulta PATCH se utiliza para actualizar una información
+
+operation::information-update-example[snippets='request-fields,curl-request,http-response']

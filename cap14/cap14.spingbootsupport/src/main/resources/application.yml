@@ -1,0 +1,17 @@
+# tag::yaml[]
+# ------------------------------------------------------------------------------
+# - Mi aplicación de ejemplo
+# ------------------------------------------------------------------------------
+application:
+  name: MIAPL
+  logs:
+    dir: e:/logs/miapli
+    colorised: true
+
+instance: DEVMIAPL
+environment: dev
+
+miapli:
+  public.endpoint: http://localhost:8888/miapli/
+# end::yaml[]
+

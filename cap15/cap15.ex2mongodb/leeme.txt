@@ -1,0 +1,9 @@
+Ejemplo con un base MongoDB que expone un API Rest
+IInicialmente, hay que lanzar la base de datos:
+mongod
+
+después ejecutar el ejemplo
+mvn spring-boot:run
+
+Las capitales son visibles desde la url:
+http://localhost:8080/capitales

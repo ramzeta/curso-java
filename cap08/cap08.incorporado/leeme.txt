@@ -1,0 +1,7 @@
+Este ejemplo muestra los tests con base de datos incorporada
+La clase es la clase de tests siguiente:
+- BdIncorporadaTest : Pruebas base de datos incorporada
+
+
+
+

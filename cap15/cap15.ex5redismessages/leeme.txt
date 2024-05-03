@@ -1,0 +1,5 @@
+Ejemplo de gestión de mensajes usando Redis.
+El proyecto envía y recibe 3 mensajes.
+
+Para lanzarlo:
+mvn spring-boot:run

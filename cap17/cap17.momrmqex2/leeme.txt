@@ -1,0 +1,7 @@
+Este ejemplo muestra el intercambio de mensajes con RabbitMQ.
+Hay que lanzar RabbitMQ con docker:
+Ir al directorio cap17/cap17.momrmqex2/docker y lanzar RabbitMQ:
+docker-compose up
+
+Después lanzar el ejemplo:
+mvn spring-boot:run

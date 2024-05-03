@@ -1,0 +1,6 @@
+Ejemplo con un base MongoDB
+Inicialmente, hay que lanzar la base de datos:
+mongod
+
+después ejecutar el ejemplo
+mvn spring-boot:run

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <property name="LOG_DIR" value="logs"/>
+  
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>
+        %d{dd-MM-yyyy HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) %logger.%M - %msg%n
+      </pattern>
+    </encoder>
+  </appender>
+  
+  <springProfile name="dev">
+    <root level="info">
+      <appender-ref ref="STDOUT"/>
+    </root>
+    <logger name="fr.eni.spring5.mongodb.ex1" additivity="false" level="debug">
+      <appender-ref ref="STDOUT"/>
+    </logger>
+  </springProfile>
+  
+</configuration>

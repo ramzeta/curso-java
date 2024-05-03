@@ -1,0 +1,6 @@
+Para generar la doc del proyecto, ejecutar el comando:
+
+mvn clean prepare-package
+
+La documentación generada en formato html está disponible en este directorio:
+cap13/RestDocEx1/target/generated-docs

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/cap01/cap01.arquitectura/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap02/cap02.patrondediseno/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap03/cap03.elementosexternos/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap03/cap03.h2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap03/cap03.h2web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap03/cap03.lombok/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap03/cap03.lombok/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap03/cap03.mavenWebApp/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap03/cap03.mavenWebApp/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap04/cap04.contenedor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap04/cap04.contenedor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap05/cap05.avance/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap05/cap05.avance/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap05/cap05.binding/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap05/cap05.binding/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap05/cap05.resbundle/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap05/cap05.resbundle/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap06/cap06.aopparconfigjava/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap06/cap06.aopparconfigjava/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap06/cap06.aopparconfigxml/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap06/cap06.aopparconfigxml/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap06/cap06.proxies/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap06/cap06.proxies/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap07/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap08/cap08.incorporado/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap08/cap08.incorporado/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap08/cap08.springdata/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap08/cap08.springdata/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap08/cap08.springjdbc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap08/cap08.springjdbc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap08/cap08.springjdbcannot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap08/cap08.springjdbcannot/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap08/cap08.springsimplejdbc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap08/cap08.springsimplejdbc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap09/cap09.clirest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap09/cap09.clirest/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap09/cap09.sr1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap09/cap09.sr2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap09/cap09.sr2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap10/cap10.step2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap10/cap10.step2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap11/cap11-backend/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap12/cap12.hateoas/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap13/cap13.restdoc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap14/cap14.ex1logs/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap14/cap14.ex3security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap14/cap14.spingbootsupport/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap15/cap15.cache/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap15/cap15.cacheredis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap15/cap15.ex1mongodb/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap15/cap15.ex2mongodb/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap15/cap15.ex5redismessages/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap16/cap16.springbatchex2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap17/cap17.momjmsex1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap17/cap17.momrmqex2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap18/cap18.mvc/src/main/kotlin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cap19/cap19.reactor/src/main/java" charset="UTF-8" />
+  </component>
+</project>

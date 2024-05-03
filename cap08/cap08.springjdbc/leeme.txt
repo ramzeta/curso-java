@@ -1,0 +1,19 @@
+Este ejemplo muestra los Spring JDBC .
+
+- fr.eni.ConfigXml : Ejemplo Spring JDBC config XML
+- fr.eni.ConfigXml2 : Otro ejemplo Spring JDBC config XML
+
+- fr.eni.Simple : Ejemplo Spring JDBC simple
+- fr.eni.Media : Ejemplo Spring JDBC dificultad media
+- fr.eni.Complejo : Utilización menos sencilla de Spring JDBC
+- fr.eni.Avanzado : Utilización más compleja de Spring JDBC
+
+- fr.eni.Practico : Ejemplo Spring JDBC práctico
+
+- fr.eni.ErrCodes : Personalización de códigos de error
+
+
+
+
+
+
